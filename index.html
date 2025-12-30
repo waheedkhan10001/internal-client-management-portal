@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Client Management Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Enterprise-style internal dashboard (consulting / ops / SaaS)."
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1 class="company-name">NorthStar Consulting</h1>
+      <div class="user-summary">
+        <p class="user-name">Abdul Khan</p>
+        <p class="user-role">Operations Manager</p>
+        <span class="user-avatar">AK</span>
+      </div>
+    </header>
+    <div class="app-shell">
+      <nav class="side-bar">
+        <ul class="nav-items">
+          <li class="nav-item active"><a href="#">Dashboard</a></li>
+          <li class="nav-item"><a href="#">Clients</a></li>
+          <li class="nav-item"><a href="#">Projects</a></li>
+          <li class="nav-item"><a href="#">Invoices</a></li>
+          <li class="nav-item"><a href="#">Reports</a></li>
+          <li class="nav-item"><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+      <main class="main-content">
+        <section class="section-metrics">
+          <h2>Metrics</h2>
+          <div class="metrics-grid">
+            <div class="metric">
+              <h3 class="metric-title">Total Clients</h3>
+              <p class="metric-value">128</p>
+              <p class="metric-meta">+12 this quarter</p>
+            </div>
+            <div class="metric">
+              <h3 class="metric-title">Active Projects</h3>
+              <p class="metric-value">34</p>
+              <p class="metric-meta">Across 9 teams</p>
+            </div>
+            <div class="metric">
+              <h3 class="metric-title">Monthly Revenue</h3>
+              <p class="metric-value">$412,500</p>
+              <p class="metric-meta">Updated today</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-clients">
+          <h2 id="recent-clients">Recent Clients</h2>
+          <table aria-labelledby="recent-clients" class="recent-clients">
+            <thead>
+              <tr>
+                <th scope="col">Client</th>
+                <th scope="col">Industry</th>
+                <th scope="col">Status</th>
+                <th scope="col">Account Manager</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BlueWave Logistics</td>
+                <td>Supply Chain</td>
+                <td class="status-cell">
+                  <span class="status active">Active</span>
+                </td>
+                <td>Sarah Khan</td>
+              </tr>
+              <tr>
+                <td>Apex Fintech</td>
+                <td>Finance</td>
+                <td class="status-cell">
+                  <span class="status pending">Pending</span>
+                </td>
+                <td>James Liu</td>
+              </tr>
+              <tr>
+                <td>Vertex Health</td>
+                <td>Healthcare</td>
+                <td class="status-cell">
+                  <span class="status closed">Closed</span>
+                </td>
+                <td>Emily Rodriguez</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
